@@ -17,9 +17,10 @@
     <title>Rock, Paper, Scissors!</title>
 </head>
 
+
 <!-- TOP OF PAGE CONTENT -->
 <body>
-    <!-- JUMBOTRON HEADER VIA BOOTSTRAP -->
+    <!-- JUMBOTRON HEADER | via bootstrap -->
     <div class="container top-header">
         <div class="jumbotron jumbotron-fluid rounded-bottom">
             <div class="container">
@@ -79,7 +80,7 @@
     </div>
     
 
-    <!-- INTIAL SCREEN | USER BOX  -->
+    <!-- INTIAL SCREEN | USER BOX | via bootstrap -->
         <!-- USER SET UP CONTENT -->
     <div class="container screen-1">
         <div class="card">
@@ -113,3 +114,59 @@
             </div>
         </div>
     </div>
+
+  <!-- SECOND SCREEN | OPPONENT SELECTOR | OPPONENT AND USER STATS -->
+    <div class="container screen-2">
+        <div id="accordion">
+            <div class="card-header">
+                Select your opponent:
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-outline-info btn-block collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                            aria-controls="collapseOne">
+                            Computer Player
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <div class="card stat-card">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    <span class="opponent">Computer Player</span> Stats:</h5>
+                                <hr>
+                                <div class="row card-content">
+                                    <div class="card-text col-6"> Win Rate:
+                                        <br>
+                                        <strong>Selections</strong>
+                                        <br>
+                                        <div class="container">
+                                            Rock:
+                                            <br> Paper:
+                                            <br> Scissors:
+                                        </div>
+                                    </div>
+                                    <div class="card-text col-6">
+                                        <span class="computer-win-count">0</span>%
+                                        <br>
+                                        <br>
+                                        <span class="computer-rock-throws">0</span>%
+                                        <br>
+                                        <span class="computer-paper-throws">0</span>%
+                                        <br>
+                                        <span class="computer-scissor-throws">0</span>%
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-success btn-block play-game" data-player="computer">Play
+                            <span class="opponent">Computer</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
